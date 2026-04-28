@@ -254,9 +254,9 @@
       margin:0 0 18px;
       max-width:920px;
       color:#fff;
-      font-size:clamp(2.8rem,6vw,6.1rem);
-      line-height:.94;
-      letter-spacing:-2.4px;
+      font-size:clamp(2.8rem,6vw,5.7rem);
+      line-height:.96;
+      letter-spacing:-2.1px;
     }
 
     .hero h1 span{color:var(--gold3)}
@@ -292,32 +292,19 @@
       font-weight:800;
     }
 
-    .hero-google{
-      margin-top:28px;
-      display:inline-flex;
-      flex-direction:column;
-      align-items:flex-start;
-      gap:8px;
-      padding:16px 18px;
-      border-radius:22px;
-      background:rgba(0,0,0,.38);
-      border:1px solid rgba(231,182,74,.22);
-      backdrop-filter:blur(10px);
-    }
-
     .google-logo{
       display:flex;
       align-items:center;
       justify-content:center;
       gap:0;
-      background:#fff;
-      border-radius:18px;
-      padding:10px 12px;
-      font-size:1.28rem;
+      background:transparent;
+      box-shadow:none;
+      border-radius:0;
+      padding:0;
+      font-size:1.55rem;
       font-weight:900;
       letter-spacing:-1px;
       line-height:1;
-      box-shadow:0 12px 26px rgba(0,0,0,.25);
       flex-shrink:0;
     }
 
@@ -365,9 +352,9 @@
       margin:0 0 16px;
       max-width:1120px;
       color:#fff;
-      font-size:clamp(2rem,4vw,4.15rem);
-      line-height:1.03;
-      letter-spacing:-1.6px;
+      font-size:clamp(2rem,3.2vw,3.45rem);
+      line-height:1.08;
+      letter-spacing:-1.2px;
     }
 
     .section-title span{color:var(--gold3)}
@@ -515,8 +502,9 @@
 
     .image-frame{
       overflow:hidden;
-      border-radius:34px;
-      min-height:540px;
+      border-radius:28px;
+      height:460px;
+      min-height:460px;
       box-shadow:var(--shadow);
     }
 
@@ -524,6 +512,7 @@
       width:100%;
       height:100%;
       object-fit:cover;
+      object-position:center top;
     }
 
     .info-grid{
@@ -558,6 +547,33 @@
 
     .section-soft .info-card h3{color:#181206}
     .section-soft .info-card p{color:#5d4b24}
+
+    #experiencia .split{
+      align-items:center;
+    }
+
+    #experiencia .section-title{
+      font-size:clamp(2.2rem,4.2vw,4.8rem);
+      line-height:1.08;
+      letter-spacing:-1.4px;
+      text-align:center;
+      max-width:760px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    #experiencia .section-text{
+      text-align:center;
+      max-width:720px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    #experiencia .info-grid{
+      max-width:720px;
+      margin-left:auto;
+      margin-right:auto;
+    }
 
     .gallery-grid{
       margin-top:40px;
@@ -599,15 +615,17 @@
     }
 
     .reviews-head{
-      margin-top:30px;
+      margin-top:26px;
+      margin-bottom:12px;
       display:inline-flex;
       flex-direction:column;
       align-items:center;
       gap:10px;
-      padding:24px 32px;
-      border-radius:36px;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(231,182,74,.18);
+      padding:0;
+      border-radius:0;
+      background:transparent;
+      border:none;
+      box-shadow:none;
     }
 
     .reviews-head-text{
@@ -618,7 +636,7 @@
       display:block;
       color:#fff;
       line-height:1.1;
-      font-size:1.15rem;
+      font-size:1.35rem;
     }
 
     .reviews-head-text small{
@@ -626,6 +644,26 @@
       color:#d3c2a3;
       line-height:1.1;
       margin-top:5px;
+      font-size:.96rem;
+    }
+
+    .reviews-head .stars{
+      font-size:1.15rem;
+      margin-top:10px;
+    }
+
+    #resenas .section-title{
+      text-align:center;
+      max-width:850px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    #resenas .section-text{
+      max-width:760px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
     }
 
     .reviews-wrap{
@@ -912,15 +950,8 @@
         padding:8px 11px;
       }
 
-      .hero-google{
-        width:100%;
-        align-items:flex-start;
-      }
-
       .google-logo{
-        font-size:1rem;
-        border-radius:14px;
-        padding:9px 10px;
+        font-size:1.15rem;
       }
 
       section{padding:62px 0}
@@ -936,6 +967,25 @@
         line-height:1.65;
       }
 
+      #experiencia .split{
+        grid-template-columns:1fr;
+      }
+
+      #experiencia .section-title{
+        font-size:clamp(2rem,9vw,3rem);
+        text-align:center;
+      }
+
+      #experiencia .section-text{
+        text-align:center;
+      }
+
+      #experiencia .image-frame{
+        height:300px;
+        min-height:300px;
+        border-radius:24px;
+      }
+
       .services-grid,
       .info-grid,
       .contact-grid,
@@ -949,8 +999,7 @@
         gap:24px;
       }
 
-      .featured-service img,
-      .image-frame{
+      .featured-service img{
         height:320px;
         min-height:320px;
       }
@@ -973,7 +1022,11 @@
 
       .reviews-head{
         width:100%;
-        border-radius:28px;
+        align-items:center;
+      }
+
+      .reviews-head-text{
+        text-align:center;
       }
 
       .reviews-wrap{
@@ -1109,17 +1162,6 @@
             <span>Finger food</span>
             <span>Empresas y familias</span>
             <span>Neuquén capital</span>
-          </div>
-
-          <div class="hero-google">
-            <div class="google-logo" aria-label="Google">
-              <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
-            </div>
-            <div>
-              <strong>Opiniones en Google</strong>
-              <div class="stars">★★★★★</div>
-              <span style="color:#ecdaba;font-size:.92rem;">Clientes destacan sabor, puntualidad, abundancia y excelente atención.</span>
-            </div>
           </div>
         </div>
       </div>
@@ -1290,7 +1332,7 @@
         </div>
 
         <div class="image-frame">
-          <img src="assets/sunset.webp" alt="Recepción sunset para eventos y catering en Neuquén" loading="lazy">
+          <img src="assets/portada-novios.webp" alt="Evento social premium con catering en Neuquén" loading="lazy">
         </div>
       </div>
     </section>
