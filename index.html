@@ -227,10 +227,13 @@
       width:min(92%,1320px);
       margin:auto;
       display:grid;
-      grid-template-columns:1.12fr .88fr;
-      align-items:end;
-      gap:34px;
-      padding:86px 0 78px;
+      grid-template-columns:1fr;
+      gap:28px;
+      padding:92px 0 82px;
+    }
+
+    .hero-content{
+      max-width:850px;
     }
 
     .eyebrow{
@@ -249,7 +252,7 @@
 
     .hero h1{
       margin:0 0 18px;
-      max-width:960px;
+      max-width:920px;
       color:#fff;
       font-size:clamp(2.8rem,6vw,6.1rem);
       line-height:.94;
@@ -260,7 +263,7 @@
 
     .hero p{
       margin:0;
-      max-width:780px;
+      max-width:760px;
       color:#f1e2c5;
       font-size:clamp(1rem,1.4vw,1.18rem);
     }
@@ -289,49 +292,17 @@
       font-weight:800;
     }
 
-    .hero-card{
-      justify-self:end;
-      width:min(100%,440px);
-      padding:30px;
-      border-radius:30px;
-      background:linear-gradient(180deg,rgba(255,255,255,.13),rgba(255,255,255,.06));
-      border:1px solid rgba(231,182,74,.28);
-      box-shadow:var(--shadow);
-      backdrop-filter:blur(12px);
-    }
-
-    .hero-card small{
-      display:block;
-      color:var(--gold3);
-      font-size:.78rem;
-      text-transform:uppercase;
-      letter-spacing:2px;
-      font-weight:900;
-      margin-bottom:10px;
-    }
-
-    .hero-card h2{
-      margin:0 0 12px;
-      color:#fff;
-      font-size:1.72rem;
-      line-height:1.08;
-    }
-
-    .hero-card p{
-      margin:0;
-      color:#ecdaba;
-      font-size:.98rem;
-    }
-
-    .rating-card{
-      margin-top:18px;
-      display:flex;
-      align-items:center;
-      gap:14px;
-      padding:18px;
+    .hero-google{
+      margin-top:28px;
+      display:inline-flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:8px;
+      padding:16px 18px;
       border-radius:22px;
-      background:rgba(0,0,0,.30);
-      border:1px solid rgba(231,182,74,.18);
+      background:rgba(0,0,0,.38);
+      border:1px solid rgba(231,182,74,.22);
+      backdrop-filter:blur(10px);
     }
 
     .google-logo{
@@ -421,6 +392,30 @@
       margin-right:auto;
     }
 
+    .video-section{
+      display:grid;
+      grid-template-columns:.9fr 1.1fr;
+      gap:42px;
+      align-items:center;
+    }
+
+    .video-frame{
+      position:relative;
+      overflow:hidden;
+      border-radius:28px;
+      box-shadow:0 22px 55px rgba(0,0,0,.35);
+      border:1px solid rgba(231,182,74,.24);
+      background:#000;
+      aspect-ratio:16/9;
+    }
+
+    .video-frame iframe{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+    }
+
     .services-grid{
       margin-top:40px;
       display:grid;
@@ -473,53 +468,21 @@
       font-size:.88rem;
     }
 
-    .video-section{
-      display:grid;
-      grid-template-columns:.9fr 1.1fr;
-      gap:42px;
-      align-items:center;
-      padding:34px;
-      border-radius:34px;
-      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));
-      border:1px solid rgba(231,182,74,.22);
-      box-shadow:0 26px 70px rgba(0,0,0,.35);
-    }
-
-    .video-frame{
-      position:relative;
-      overflow:hidden;
-      border-radius:28px;
-      box-shadow:0 22px 55px rgba(0,0,0,.35);
-      border:1px solid rgba(231,182,74,.24);
-      background:#000;
-      aspect-ratio:16/9;
-    }
-
-    .video-frame iframe{
-      position:absolute;
-      inset:0;
-      width:100%;
-      height:100%;
-    }
-
     .featured-service{
       margin-top:42px;
       display:grid;
       grid-template-columns:.95fr 1.05fr;
       gap:38px;
       align-items:center;
-      padding:28px;
-      border-radius:34px;
-      background:linear-gradient(180deg,rgba(255,255,255,.08),rgba(255,255,255,.035));
-      border:1px solid rgba(231,182,74,.22);
-      box-shadow:0 16px 38px rgba(0,0,0,.24);
     }
 
     .featured-service img{
       width:100%;
-      height:520px;
+      height:500px;
       object-fit:cover;
       border-radius:28px;
+      box-shadow:0 20px 50px rgba(0,0,0,.32);
+      border:1px solid rgba(231,182,74,.18);
     }
 
     .bullet-list{
@@ -638,27 +601,31 @@
     .reviews-head{
       margin-top:30px;
       display:inline-flex;
+      flex-direction:column;
       align-items:center;
-      gap:14px;
-      padding:15px 20px;
-      border-radius:999px;
+      gap:10px;
+      padding:24px 32px;
+      border-radius:36px;
       background:rgba(255,255,255,.08);
       border:1px solid rgba(231,182,74,.18);
     }
 
-    .reviews-head-text{text-align:left}
+    .reviews-head-text{
+      text-align:center;
+    }
 
     .reviews-head-text strong{
       display:block;
       color:#fff;
       line-height:1.1;
+      font-size:1.15rem;
     }
 
     .reviews-head-text small{
       display:block;
       color:#d3c2a3;
       line-height:1.1;
-      margin-top:3px;
+      margin-top:5px;
     }
 
     .reviews-wrap{
@@ -848,11 +815,6 @@
         grid-template-columns:1fr;
       }
 
-      .hero-card{
-        justify-self:start;
-        width:100%;
-      }
-
       .services-grid,
       .info-grid,
       .contact-grid{
@@ -950,13 +912,9 @@
         padding:8px 11px;
       }
 
-      .hero-card{
-        padding:22px;
-        border-radius:24px;
-      }
-
-      .hero-card h2{
-        font-size:1.32rem;
+      .hero-google{
+        width:100%;
+        align-items:flex-start;
       }
 
       .google-logo{
@@ -987,10 +945,8 @@
 
       .service-card img{height:220px}
 
-      .featured-service,
-      .video-section{
-        padding:20px;
-        border-radius:26px;
+      .featured-service{
+        gap:24px;
       }
 
       .featured-service img,
@@ -1017,8 +973,7 @@
 
       .reviews-head{
         width:100%;
-        border-radius:22px;
-        justify-content:flex-start;
+        border-radius:28px;
       }
 
       .reviews-wrap{
@@ -1106,8 +1061,8 @@
       </a>
 
       <nav class="menu">
-        <a href="#servicios">Servicios</a>
         <a href="#presentacion">Video</a>
+        <a href="#servicios">Servicios</a>
         <a href="#pernil">Pernil</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#resenas">Reseñas</a>
@@ -1134,7 +1089,7 @@
       <div class="hero-overlay"></div>
 
       <div class="hero-inner">
-        <div>
+        <div class="hero-content">
           <span class="eyebrow">Catering y eventos en Neuquén</span>
           <h1>Catering en Neuquén para eventos que se ven <span>premium</span> y se disfrutan de verdad.</h1>
           <p>
@@ -1155,24 +1110,46 @@
             <span>Empresas y familias</span>
             <span>Neuquén capital</span>
           </div>
-        </div>
 
-        <aside class="hero-card">
-          <small>Servicio integral</small>
-          <h2>Comida rica, abundante y una presentación que eleva tu evento.</h2>
-          <p>Te ayudamos a resolver el menú según la cantidad de invitados, el tipo de evento y la experiencia que querés lograr.</p>
-
-          <div class="rating-card">
+          <div class="hero-google">
             <div class="google-logo" aria-label="Google">
               <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
             </div>
             <div>
-              <small>Opiniones en Google</small>
+              <strong>Opiniones en Google</strong>
               <div class="stars">★★★★★</div>
-              <p style="font-size:.92rem;">Clientes destacan sabor, puntualidad, abundancia y excelente atención.</p>
+              <span style="color:#ecdaba;font-size:.92rem;">Clientes destacan sabor, puntualidad, abundancia y excelente atención.</span>
             </div>
           </div>
-        </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-dark" id="presentacion">
+      <div class="container video-section">
+        <div>
+          <span class="kicker">Conocé nuestra propuesta</span>
+          <h2 class="section-title">Catering y eventos en Neuquén con presentación, sabor y experiencia real.</h2>
+          <p class="section-text">
+            Mirá cómo trabajamos cada detalle: mesas preparadas, recepciones, servicio de catering, presentación de platos y ambientación para eventos sociales, familiares y corporativos.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/5492993323042?text=Hola%2C%20quiero%20cotizar%20un%20evento%20en%20Neuqu%C3%A9n." target="_blank" rel="noopener">
+              Cotizar mi evento
+            </a>
+          </div>
+        </div>
+
+        <div class="video-frame">
+          <iframe
+            src="https://www.youtube.com/embed/CsPbK8D_RMI?rel=0&modestbranding=1&playsinline=1"
+            title="Catering para eventos en Neuquén"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
 
@@ -1254,34 +1231,6 @@
               <a href="https://wa.me/5492993323042?text=Hola%2C%20quiero%20consultar%20por%20un%20men%C3%BA%20personalizado%20en%20Neuqu%C3%A9n." target="_blank">Consultar</a>
             </div>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-dark" id="presentacion">
-      <div class="container video-section">
-        <div>
-          <span class="kicker">Conocé nuestra propuesta</span>
-          <h2 class="section-title">Catering y eventos en Neuquén con presentación, sabor y experiencia real.</h2>
-          <p class="section-text">
-            Mirá cómo trabajamos cada detalle: mesas preparadas, recepciones, servicio de catering, presentación de platos y ambientación para eventos sociales, familiares y corporativos.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://wa.me/5492993323042?text=Hola%2C%20quiero%20cotizar%20un%20evento%20en%20Neuqu%C3%A9n." target="_blank" rel="noopener">
-              Cotizar mi evento
-            </a>
-          </div>
-        </div>
-
-        <div class="video-frame">
-          <iframe
-            src="https://www.youtube.com/embed/CsPbK8D_RMI?rel=0&modestbranding=1&playsinline=1"
-            title="Catering para eventos en Neuquén"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen>
-          </iframe>
         </div>
       </div>
     </section>
