@@ -33,18 +33,15 @@
       --cream:#fff2cf;
       --text:#f8f1e3;
       --muted:#d7c6a5;
-      --green:#075f3b;
+      --green:#05351f;
+      --green2:#07452d;
       --shadow:0 26px 70px rgba(0,0,0,.42);
       --max:1320px;
     }
 
-    *{
-      box-sizing:border-box;
-    }
+    *{box-sizing:border-box}
 
-    html{
-      scroll-behavior:smooth;
-    }
+    html{scroll-behavior:smooth}
 
     body{
       margin:0;
@@ -208,18 +205,18 @@
       filter:brightness(.82) saturate(1.08) contrast(1.04);
     }
 
-    .hero-reel img:nth-child(1){animation-delay:0s;}
-    .hero-reel img:nth-child(2){animation-delay:6s;}
-    .hero-reel img:nth-child(3){animation-delay:12s;}
-    .hero-reel img:nth-child(4){animation-delay:18s;}
-    .hero-reel img:nth-child(5){animation-delay:24s;}
+    .hero-reel img:nth-child(1){animation-delay:0s}
+    .hero-reel img:nth-child(2){animation-delay:6s}
+    .hero-reel img:nth-child(3){animation-delay:12s}
+    .hero-reel img:nth-child(4){animation-delay:18s}
+    .hero-reel img:nth-child(5){animation-delay:24s}
 
     @keyframes heroReel{
-      0%{opacity:0;transform:scale(1.05);}
-      7%{opacity:1;transform:scale(1.035);}
-      27%{opacity:1;transform:scale(1);}
-      35%{opacity:0;transform:scale(1);}
-      100%{opacity:0;transform:scale(1.05);}
+      0%{opacity:0;transform:scale(1.05)}
+      7%{opacity:1;transform:scale(1.035)}
+      27%{opacity:1;transform:scale(1)}
+      35%{opacity:0;transform:scale(1)}
+      100%{opacity:0;transform:scale(1.05)}
     }
 
     .hero-overlay{
@@ -334,10 +331,10 @@
       flex-shrink:0;
     }
 
-    .g-blue{color:#4285F4;}
-    .g-red{color:#EA4335;}
-    .g-yellow{color:#FBBC05;}
-    .g-green{color:#34A853;}
+    .g-blue{color:#4285F4}
+    .g-red{color:#EA4335}
+    .g-yellow{color:#FBBC05}
+    .g-green{color:#34A853}
 
     .stars{
       color:#ffcc5f;
@@ -363,7 +360,25 @@
     }
 
     .section-green{
-      background:linear-gradient(180deg,#075f3b 0%,#03492d 100%);
+      background:
+        radial-gradient(circle at top center,rgba(231,182,74,.12),transparent 34%),
+        linear-gradient(180deg,#07452d 0%,#05351f 100%);
+      border-top:1px solid rgba(231,182,74,.18);
+      border-bottom:1px solid rgba(231,182,74,.18);
+    }
+
+    .section-green .info-card{
+      background:rgba(255,255,255,.07);
+      border:1px solid rgba(247,217,139,.22);
+      box-shadow:0 18px 42px rgba(0,0,0,.18);
+    }
+
+    .section-green .info-card h3{
+      color:var(--gold3);
+    }
+
+    .section-green .info-card p{
+      color:#f1e4c7;
     }
 
     .kicker{
@@ -771,8 +786,8 @@
     }
 
     @keyframes scrollReviews{
-      from{transform:translateX(0);}
-      to{transform:translateX(-50%);}
+      from{transform:translateX(0)}
+      to{transform:translateX(-50%)}
     }
 
     .review-card{
@@ -1362,7 +1377,7 @@
 
         <div class="video-frame">
           <iframe
-            src="https://www.youtube.com/embed/CsPbK8D_RMI?rel=0&modestbranding=1&playsinline=1"
+            src="https://www.youtube.com/embed/0y01cYsH2zY?rel=0&modestbranding=1&playsinline=1"
             title="Catering para eventos en Neuquén"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -1589,9 +1604,20 @@
         <p class="section-text" style="color:#f1e4c7;">Te orientamos según el tipo de encuentro, la cantidad de invitados y el estilo que querés lograr.</p>
 
         <div class="info-grid">
-          <article class="info-card"><h3>Abundancia real</h3><p>Propuestas pensadas para que tus invitados coman bien y recuerden la experiencia.</p></article>
-          <article class="info-card"><h3>Presentación cuidada</h3><p>Una mesa bien presentada eleva la percepción de todo el evento.</p></article>
-          <article class="info-card"><h3>Atención cercana</h3><p>Respondemos por WhatsApp y ayudamos a definir la mejor opción.</p></article>
+          <article class="info-card">
+            <h3>Abundancia real</h3>
+            <p>Propuestas pensadas para que tus invitados coman bien y recuerden la experiencia.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Presentación cuidada</h3>
+            <p>Una mesa bien presentada eleva la percepción de todo el evento.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Atención cercana</h3>
+            <p>Respondemos por WhatsApp y ayudamos a definir la mejor opción.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -1706,4 +1732,3 @@
 
 </body>
 </html>
-   
