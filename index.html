@@ -38,9 +38,13 @@
       --max:1320px;
     }
 
-    *{box-sizing:border-box}
+    *{
+      box-sizing:border-box;
+    }
 
-    html{scroll-behavior:smooth}
+    html{
+      scroll-behavior:smooth;
+    }
 
     body{
       margin:0;
@@ -51,9 +55,20 @@
       overflow-x:hidden;
     }
 
-    img{display:block;max-width:100%}
-    a{text-decoration:none;color:inherit}
-    .container{width:min(92%,var(--max));margin:auto}
+    img{
+      display:block;
+      max-width:100%;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+
+    .container{
+      width:min(92%,var(--max));
+      margin:auto;
+    }
 
     .top-note{
       background:#5f5f5f;
@@ -69,7 +84,9 @@
       gap:12px;
     }
 
-    .top-note a{font-weight:900}
+    .top-note a{
+      font-weight:900;
+    }
 
     .header{
       position:sticky;
@@ -129,7 +146,9 @@
       color:#efe4cd;
     }
 
-    .menu a:hover{color:var(--gold3)}
+    .menu a:hover{
+      color:var(--gold3);
+    }
 
     .btn{
       display:inline-flex;
@@ -150,7 +169,9 @@
       box-shadow:0 16px 36px rgba(231,182,74,.28);
     }
 
-    .btn-primary:hover{transform:translateY(-2px)}
+    .btn-primary:hover{
+      transform:translateY(-2px);
+    }
 
     .btn-secondary{
       color:#fff;
@@ -187,18 +208,18 @@
       filter:brightness(.82) saturate(1.08) contrast(1.04);
     }
 
-    .hero-reel img:nth-child(1){animation-delay:0s}
-    .hero-reel img:nth-child(2){animation-delay:6s}
-    .hero-reel img:nth-child(3){animation-delay:12s}
-    .hero-reel img:nth-child(4){animation-delay:18s}
-    .hero-reel img:nth-child(5){animation-delay:24s}
+    .hero-reel img:nth-child(1){animation-delay:0s;}
+    .hero-reel img:nth-child(2){animation-delay:6s;}
+    .hero-reel img:nth-child(3){animation-delay:12s;}
+    .hero-reel img:nth-child(4){animation-delay:18s;}
+    .hero-reel img:nth-child(5){animation-delay:24s;}
 
     @keyframes heroReel{
-      0%{opacity:0;transform:scale(1.05)}
-      7%{opacity:1;transform:scale(1.035)}
-      27%{opacity:1;transform:scale(1)}
-      35%{opacity:0;transform:scale(1)}
-      100%{opacity:0;transform:scale(1.05)}
+      0%{opacity:0;transform:scale(1.05);}
+      7%{opacity:1;transform:scale(1.035);}
+      27%{opacity:1;transform:scale(1);}
+      35%{opacity:0;transform:scale(1);}
+      100%{opacity:0;transform:scale(1.05);}
     }
 
     .hero-overlay{
@@ -260,7 +281,9 @@
       letter-spacing:-2px;
     }
 
-    .hero h1 span{color:var(--gold3)}
+    .hero h1 span{
+      color:var(--gold3);
+    }
 
     .hero p{
       margin:0;
@@ -311,10 +334,10 @@
       flex-shrink:0;
     }
 
-    .g-blue{color:#4285F4}
-    .g-red{color:#EA4335}
-    .g-yellow{color:#FBBC05}
-    .g-green{color:#34A853}
+    .g-blue{color:#4285F4;}
+    .g-red{color:#EA4335;}
+    .g-yellow{color:#FBBC05;}
+    .g-green{color:#34A853;}
 
     .stars{
       color:#ffcc5f;
@@ -324,7 +347,9 @@
       margin:8px 0;
     }
 
-    section{padding:82px 0}
+    section{
+      padding:82px 0;
+    }
 
     .section-dark{
       background:
@@ -360,7 +385,9 @@
       letter-spacing:-1.2px;
     }
 
-    .section-title span{color:var(--gold3)}
+    .section-title span{
+      color:var(--gold3);
+    }
 
     .section-text{
       margin:0;
@@ -370,11 +397,17 @@
     }
 
     .section-soft .section-title,
-    .section-soft .section-text{color:#1d1609}
+    .section-soft .section-text{
+      color:#1d1609;
+    }
 
-    .section-soft .section-text{color:#5c4a24}
+    .section-soft .section-text{
+      color:#5c4a24;
+    }
 
-    .centered{text-align:center}
+    .centered{
+      text-align:center;
+    }
 
     .centered .section-title,
     .centered .section-text{
@@ -383,43 +416,62 @@
     }
 
     #presentacion{
-      padding-top:70px;
-      padding-bottom:86px;
+      padding-top:62px;
+      padding-bottom:88px;
     }
 
     .video-section{
       display:grid;
-      grid-template-columns:.68fr 1.32fr;
-      gap:58px;
+      grid-template-columns:1fr;
+      gap:34px;
       align-items:center;
+      justify-items:center;
+      text-align:center;
     }
 
     .video-copy{
-      max-width:520px;
+      max-width:980px;
+      margin:0 auto;
+      text-align:center;
+    }
+
+    .video-copy .kicker{
+      text-align:center;
     }
 
     .video-title{
-      font-size:clamp(2.2rem,3.6vw,4.4rem);
-      line-height:1.04;
-      letter-spacing:-1.4px;
-      max-width:560px;
+      max-width:980px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
+      font-size:clamp(2.4rem,4.2vw,4.8rem);
+      line-height:1.06;
+      letter-spacing:-1.5px;
       text-wrap:balance;
     }
 
-    .video-copy .section-text{
-      max-width:540px;
+    .video-description{
+      max-width:760px;
+      margin-left:auto;
+      margin-right:auto;
+      text-align:center;
       line-height:1.7;
+      color:#e7d6b8;
+    }
+
+    .video-actions{
+      justify-content:center;
     }
 
     .video-frame{
       position:relative;
       overflow:hidden;
-      border-radius:30px;
-      box-shadow:0 28px 70px rgba(0,0,0,.42);
-      border:1px solid rgba(231,182,74,.28);
-      background:#000;
+      width:min(100%,1120px);
       aspect-ratio:16/9;
-      width:100%;
+      border-radius:32px;
+      box-shadow:0 30px 80px rgba(0,0,0,.48);
+      border:1px solid rgba(231,182,74,.32);
+      background:#000;
     }
 
     .video-frame iframe{
@@ -456,7 +508,9 @@
       object-fit:cover;
     }
 
-    .service-body{padding:22px}
+    .service-body{
+      padding:22px;
+    }
 
     .service-body h3{
       margin:0 0 10px;
@@ -571,8 +625,13 @@
       border:1px solid rgba(0,0,0,.08);
     }
 
-    .section-soft .info-card h3{color:#181206}
-    .section-soft .info-card p{color:#5d4b24}
+    .section-soft .info-card h3{
+      color:#181206;
+    }
+
+    .section-soft .info-card p{
+      color:#5d4b24;
+    }
 
     #experiencia .split{
       align-items:center;
@@ -616,7 +675,9 @@
       box-shadow:0 16px 38px rgba(0,0,0,.24);
     }
 
-    .gallery-item.large{grid-row:1/span 2}
+    .gallery-item.large{
+      grid-row:1/span 2;
+    }
 
     .gallery-item img{
       width:100%;
@@ -625,7 +686,9 @@
       transition:.45s ease;
     }
 
-    .gallery-item:hover img{transform:scale(1.05)}
+    .gallery-item:hover img{
+      transform:scale(1.05);
+    }
 
     .gallery-label{
       position:absolute;
@@ -708,8 +771,8 @@
     }
 
     @keyframes scrollReviews{
-      from{transform:translateX(0)}
-      to{transform:translateX(-50%)}
+      from{transform:translateX(0);}
+      to{transform:translateX(-50%);}
     }
 
     .review-card{
@@ -775,7 +838,9 @@
       transition:.25s ease;
     }
 
-    .faq-item.open .faq-question span:last-child{transform:rotate(45deg)}
+    .faq-item.open .faq-question span:last-child{
+      transform:rotate(45deg);
+    }
 
     .faq-answer{
       max-height:0;
@@ -869,18 +934,15 @@
     }
 
     @media(max-width:1120px){
-      .menu{display:none}
+      .menu{
+        display:none;
+      }
 
       .hero-inner,
       .split,
       .featured-service,
-      .video-section,
       .footer-grid{
         grid-template-columns:1fr;
-      }
-
-      .video-copy{
-        max-width:760px;
       }
 
       .services-grid,
@@ -901,7 +963,9 @@
     }
 
     @media(max-width:900px){
-      .top-note{display:none}
+      .top-note{
+        display:none;
+      }
 
       .nav{
         min-height:72px;
@@ -926,7 +990,9 @@
         white-space:normal;
       }
 
-      .nav>.btn{display:none}
+      .nav>.btn{
+        display:none;
+      }
 
       .hero{
         min-height:auto;
@@ -984,10 +1050,13 @@
         font-size:1.15rem;
       }
 
-      section{padding:62px 0}
+      section{
+        padding:62px 0;
+      }
 
       #presentacion{
         padding-top:54px;
+        padding-bottom:64px;
       }
 
       .section-title{
@@ -998,6 +1067,17 @@
 
       .video-title{
         font-size:clamp(2rem,9vw,3.05rem);
+        line-height:1.08;
+      }
+
+      .video-description{
+        font-size:1rem;
+        line-height:1.6;
+      }
+
+      .video-frame{
+        width:100%;
+        border-radius:22px;
       }
 
       .section-text{
@@ -1031,7 +1111,9 @@
         grid-template-columns:1fr;
       }
 
-      .service-card img{height:220px}
+      .service-card img{
+        height:220px;
+      }
 
       .featured-service{
         gap:24px;
@@ -1041,8 +1123,6 @@
         height:320px;
         min-height:320px;
       }
-
-      .video-frame{border-radius:22px}
 
       .gallery-grid{
         grid-template-rows:auto;
@@ -1056,7 +1136,9 @@
         min-height:240px;
       }
 
-      .gallery-item img{height:240px}
+      .gallery-item img{
+        height:240px;
+      }
 
       .reviews-head{
         width:100%;
@@ -1103,13 +1185,29 @@
     }
 
     @media(max-width:420px){
-      .brand-copy span{max-width:155px}
-      .hero h1{font-size:2rem}
-      .service-card img{height:200px}
+      .brand-copy span{
+        max-width:155px;
+      }
+
+      .hero h1{
+        font-size:2rem;
+      }
+
+      .service-card img{
+        height:200px;
+      }
+
       .featured-service img,
-      .image-frame{height:285px;min-height:285px}
+      .image-frame{
+        height:285px;
+        min-height:285px;
+      }
+
       .gallery-item,
-      .gallery-item img{height:220px;min-height:220px}
+      .gallery-item img{
+        height:220px;
+        min-height:220px;
+      }
     }
   </style>
 
@@ -1243,14 +1341,19 @@
 
     <section class="section-dark" id="presentacion">
       <div class="container video-section">
+
         <div class="video-copy">
           <span class="kicker">Conocé nuestra propuesta</span>
-          <h2 class="section-title video-title">Catering y eventos en Neuquén con presentación, sabor y experiencia real.</h2>
-          <p class="section-text">
-            Mirá cómo trabajamos cada detalle: mesas preparadas, recepciones, servicio de catering, presentación de platos y ambientación para eventos sociales, familiares y corporativos.
+
+          <h2 class="section-title video-title">
+            Catering y eventos en Neuquén con presentación, sabor y experiencia real.
+          </h2>
+
+          <p class="section-text video-description">
+            Mirá cómo trabajamos cada detalle: mesas preparadas, recepciones, servicio de catering, presentación de platos y ambientación para eventos sociales, familiares y corporativos en Neuquén.
           </p>
 
-          <div class="hero-actions">
+          <div class="hero-actions video-actions">
             <a class="btn btn-primary" href="https://wa.me/5492993323042?text=Hola%2C%20quiero%20cotizar%20un%20evento%20en%20Neuqu%C3%A9n." target="_blank" rel="noopener">
               Cotizar mi evento
             </a>
@@ -1266,6 +1369,7 @@
             allowfullscreen>
           </iframe>
         </div>
+
       </div>
     </section>
 
@@ -1602,3 +1706,4 @@
 
 </body>
 </html>
+   
